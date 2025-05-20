@@ -1,5 +1,6 @@
+// src/App.jsx
 import { useEffect, useState } from "react";
-import { FaGlobe, FaGithub, FaMobileAlt, FaRobot, FaRocket } from "react-icons/fa";
+import { FaGlobe, FaGithub, FaMobileAlt, FaRobot, FaRocket, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import "./App.css";
 
 const projects = [
@@ -14,9 +15,9 @@ const projects = [
     url: "https://abdalmalkall.github.io/Ecl/",
   },
   {
-    name: "Fahed web ",
+    name: "Fahed (GitHub)",
     icon: <FaGithub />,
-    url: "https://abdalmalkall.github.io/fahed/",
+    url: "https://github.com/abdalmalkall/fahed",
   },
   {
     name: "Multi Mobil",
@@ -27,6 +28,16 @@ const projects = [
     name: "RYP",
     icon: <FaRobot />,
     url: "https://abdalmalkall.github.io/RyP/",
+  },
+  {
+    name: "WhatsApp",
+    icon: <FaWhatsapp />,
+    url: "https://wa.me/962786511780",
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/_.c_ll.__?igsh=c21vM2dtdG9ma3hw&utm_source=qr",
   },
 ];
 
@@ -39,10 +50,14 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center justify-center font-sans overflow-hidden">
-      <h1 className="text-4xl md:text-5xl font-bold mb-10 animate-ai-glow">Communication Launcher</h1>
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col items-center justify-center font-sans overflow-hidden px-4">
+      <div className="flex-1 flex items-center justify-center w-full">
+        <h1 className="text-5xl md:text-6xl font-bold animate-ai-glow text-center leading-tight">
+          Communication Launcher
+        </h1>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl mt-10 pb-10">
         {projects.map((project, index) => (
           <a
             key={index}
