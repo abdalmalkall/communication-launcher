@@ -14,9 +14,9 @@ const projects = [
     url: "https://abdalmalkall.github.io/Ecl/",
   },
   {
-    name: "Fahed (GitHub)",
+    name: "Fahed web ",
     icon: <FaGithub />,
-    url: "https://github.com/abdalmalkall/fahed",
+    url: "https://abdalmalkall.github.io/fahed/",
   },
   {
     name: "Multi Mobil",
