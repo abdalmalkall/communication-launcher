@@ -11,6 +11,7 @@ export const projects = [
     title: "MultiMobil",
     description: "Mobile devices store interface with product listings.",
     icon: <FaMobileAlt />,
+    
     link: "https://abdalmalkall.github.io/multimobil/index.html"
   },
   {

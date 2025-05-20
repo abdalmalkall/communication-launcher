@@ -1,0 +1,37 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-ai-glow {
+    animation: ai-glow 3s ease-in-out infinite alternate;
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  .text-ai {
+    color: #00f0ff;
+  }
+  .hover\:shadow-neon:hover {
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+  }
+}
+
+@keyframes ai-glow {
+  from {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
